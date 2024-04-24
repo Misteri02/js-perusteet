@@ -3,7 +3,7 @@ Toteuta funktio canVote siten, että se palauttaa arvon true aina kun ikä on 18
 */
 
 function canVote(age) {
-
+ return age >= 18;  
 }
 
 // Esimerkkikäyttö - älä muuta

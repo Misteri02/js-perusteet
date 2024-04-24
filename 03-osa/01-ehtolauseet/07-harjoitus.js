@@ -11,18 +11,25 @@ Palauttaa kirjainarvosanan pistemäärän perusteella seuraavasti:
 
 */
 
+function assignGrade(grade){
+    let letterGrade = '';
+
+        if (grade >= 90) {
+            letterGrade = 'A'
+        } else if (grade >= 80) {
+            letterGrade = 'B'
+        } else if (grade >= 70) {
+            letterGrade = 'C'
+        } else if (grade >= 60) {
+            letterGrade = 'D'
+        } else { letterGrade = 'F'}
+        
+     return letterGrade;
+}
+
 // Esimerkkikäyttö - älä muokkaa
 console.log('Sinä sait ' + assignGrade(95)); // Sinä sait A
 console.log('Sinä sait ' + assignGrade(81)); // Sinä sait B
 console.log('Sinä sait ' + assignGrade(72)); // Sinä sait C
 console.log('Sinä sait ' + assignGrade(64)); // Sinä sait D
 console.log('Sinä sait ' + assignGrade(42)); // Sinä sait F
-
-
-
-// Treenaa: Keksi itse samanlainen funktio eri nimellä. Pisterajoja voi olla vähemmän kuin yllä.
-
-
-
-
-// Kutsu tekemääsi funktiota

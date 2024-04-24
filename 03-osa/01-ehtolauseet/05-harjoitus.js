@@ -3,7 +3,12 @@ Täydennä funktio evenOrOdd siten, että se palauttaa merkkijonon "even", kun s
  */
 
 function evenOrOdd(number) {
-  
+    if (number % 2 === 0) {
+        return "Luku on parillinen";
+      } else {
+        return "Luku on pariton";
+      }
+         
 }
 
 // Esimerkkikäyttö - älä muokkaa

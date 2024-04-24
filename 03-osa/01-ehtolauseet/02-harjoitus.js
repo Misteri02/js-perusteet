@@ -4,8 +4,13 @@
 * Luo ohjelma getTemperature, joka kysyy käyttäjältä lämpötilaa Celsius-asteina ja sitten tulostaa, pitäisikö heidän pukea takki päälle (jos lämpötila on alle 15°C) vai ei.
 */
 function getTemperature(temp) {
-  
+    if (temp >= 15) {
+        console.log("takki pois");
+      } else {
+        console.log("takki päälle");
+      }      
 }
+
 
 let esimerkki = prompt('Mikä on nykyinen lämpötila?');
 
